@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepto Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="logo">
+        Zepto
+    </div>
+
+    <div class="location">
+        Deliver to <b>Khar, Mumbai</b> in 10 mins
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search for products">
+    </div>
+
+    <div class="nav-buttons">
+        <button class="login">Login</button>
+
+        <div class="cart" onclick="toggleCart()">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </div>
+    </div>
+
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+
+    <img src="https://images.unsplash.com/photo-1607082350920-6a1b1a0cdd5b" />
+
+    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" />
+
+    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" />
+
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf">
+            <p>Fruits</p>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707">
+            <p>Dairy</p>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
+            <p>Bakery</p>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087">
+            <p>Snacks</p>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62">
+            <p>Beverages</p>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1584473457409-ce5c6f3b0c3d">
+            <p>Cleaning</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+    <h2>Best Sellers</h2>
+
+    <div class="product-grid" id="productGrid"></div>
+
+</section>
+
+<!-- RECOMMENDATION -->
+<section class="recommendation">
+
+    <h2>Recommended for You</h2>
+
+    <div id="recommendBox" class="product-grid"></div>
+
+</section>
+
+<!-- CART PANEL -->
+<div class="cart-panel" id="cartPanel">
+
+    <h3>Your Cart</h3>
+
+    <div id="cartItems"></div>
+
+    <h4>Total Items: <span id="totalItems">0</span></h4>
+
+    <button onclick="toggleCart()">Close</button>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>Zepto REcommendation System | Teacher Assessment</p>
+    <p>Made by Srushti</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

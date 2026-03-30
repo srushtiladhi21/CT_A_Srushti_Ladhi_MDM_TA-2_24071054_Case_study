@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    font-family:Poppins;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+.header{
+    position:sticky;
+    top:0;
+    background:#6c2bd9;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+.search input{
+    padding:8px;
+    width:300px;
+    border:none;
+    border-radius:5px;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.login{
+    padding:8px 15px;
+    border:none;
+    border-radius:5px;
+    background:white;
+    cursor:pointer;
+}
+
+.cart{
+    cursor:pointer;
+}
+
+/* BANNER */
+.banner{
+    display:flex;
+    gap:10px;
+    padding:20px;
+}
+
+.banner img{
+    width:33%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* CATEGORIES */
+.categories{
+    padding:20px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.category{
+    background:white;
+    text-align:center;
+    padding:10px;
+    border-radius:10px;
+}
+
+.category img{
+    width:80px;
+    height:80px;
+}
+
+/* PRODUCTS */
+.products{
+    padding:20px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.product{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.product img{
+    width:100px;
+    height:100px;
+}
+
+.product button{
+    background:#6c2bd9;
+    color:white;
+    border:none;
+    padding:8px;
+    margin-top:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* RECOMMENDATION */
+.recommendation{
+    padding:20px;
+}
+
+/* CART */
+.cart-panel{
+    position:fixed;
+    right:-300px;
+    top:0;
+    width:300px;
+    height:100%;
+    background:white;
+    padding:20px;
+    transition:0.3s;
+}
+
+.cart-panel.active{
+    right:0;
+}
+
+/* FOOTER */
+footer{
+    background:#6c2bd9;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
